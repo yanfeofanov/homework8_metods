@@ -7,14 +7,8 @@ public class Task_1 {
     }
 
     void checkYear(){
-        if (year%100 == 0 && year%400 == 0){
+        if ((year%400 == 0) || ((year%4 == 0) && (year%100 !=0))){
             System.out.println(year+" год - восокосный");
-        }
-        else if(year%100 == 0){
-            System.out.println(year+" год - невисокосный");
-        }
-        else if(year%4 == 0){
-            System.out.println(year+" год - високосный");
         }
         else {
             System.out.println(year+" год - невисокосный");
