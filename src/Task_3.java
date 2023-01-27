@@ -2,12 +2,7 @@ public class Task_3 {
     int distance ;
     int dayDelivery = 1;
 
-//    int dayDeliveryDistance(int daysDelivery){
-//        dayDelivery = daysDelivery;
-//        daysDelivery = 1;
-//        return daysDelivery;
-//    }
-    void setDistance(int deliveryDistance){
+    void printDistanceInfo(int deliveryDistance){
         distance = deliveryDistance;
         if(distance  <= 20){
             System.out.println("Потребуется дней "+dayDelivery);
