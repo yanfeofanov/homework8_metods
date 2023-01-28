@@ -15,12 +15,8 @@ public class Main {
     private static void task2(){
         System.out.println("Задание №2");
         int currentYear = LocalDate.now().getYear();
-        Task_2 systemIos = new Task_2();
-        systemIos.operatingSystemTypeIos(currentYear,0);
-        systemIos.detectionVersionIos();
-        Task_2 systemAndroid = new Task_2();
-        systemAndroid.operatingSystemTypeAndroid(2014,1);
-        systemAndroid.detectionVersionAndroid();
+        Task_2 operationSystem = new Task_2();
+        operationSystem.detectionVersion(0,currentYear);
     }
     private static void task3(){
         System.out.println("Задание №3");
