@@ -15,18 +15,12 @@ public class Main {
     private static void task2(){
         System.out.println("Задание №2");
         int currentYear = LocalDate.now().getYear();
-        Task_2 systemIos = new Task_2();
-        systemIos.productionYearIos(currentYear);
-        systemIos.operatingSystemTypeIos(0);
-        systemIos.detectionVersionIos();
-        Task_2 systemAndroid = new Task_2();
-        systemAndroid.productionYearAndroid(2014);
-        systemAndroid.operatingSystemTypeAndroid(1);
-        systemAndroid.detectionVersionAndroid();
+        Task_2 operationSystem = new Task_2();
+        operationSystem.detectionVersion(0,currentYear);
     }
     private static void task3(){
         System.out.println("Задание №3");
         Task_3 delivery = new Task_3();
-        delivery.setDistance(95);
+        delivery.printDistanceInfo(95);
     }
 }
